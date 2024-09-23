@@ -19,7 +19,7 @@ public class App {
 
         StudentDao studentDao = (StudentDao) context.getBean("stdDao");
 
-        /* Inserting New Student
+        /* Inserting New Student */
         System.out.println("Enter student name: ");
         String name = scanner.nextLine();
         System.out.println("Enter student email address: ");
@@ -34,7 +34,7 @@ public class App {
         Student newStudent = new Student(name, email, phone, gender, age);
         int result = studentDao.addStudent(newStudent);
         System.out.println("New student added: " + result);
-        */
+
 
         /* Updating Existing Student
         System.out.println("Enter student name: ");
